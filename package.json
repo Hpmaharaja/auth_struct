@@ -1,0 +1,23 @@
+{
+  "name": "loginApp",
+  "description": "A package using naive versioning",
+  "author": "hpmaharaja",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.14.2",
+    "client-sessions": "^0.7.0",
+    "csurf": "^1.8.3",
+    "ejs": "^2.3.4",
+    "engine": "^0.1.10",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongodb": "^2.1.2",
+    "mongoose": "^4.3.2",
+    "optimist": ">= 0.1.0",
+    "start": "^1.1.1"
+  },
+  "engine": "node 0.4.1"
+}
