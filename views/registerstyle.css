@@ -1,0 +1,44 @@
+body {
+	background-color: lightblue;
+}
+
+th {
+	width: 800px;
+	height: 200px;
+	background-color: white;
+	border: 2px solid blue;
+}
+
+h1 {
+	font-weight: bold;
+	font-family: hervetica;
+	font-size: 50;
+	color: blue;
+}
+
+td {
+	border: 2px solid white;
+	width: 800px;
+	height: 500px;
+	background-color: blue;
+	text-align: center;
+	vertical-align: top;
+	padding-top: 40;
+}
+
+b {
+	color: white;
+	font-family: arial;
+	font-size: 40;
+}
+
+input {
+	width: 40%;
+	font-family: arial;
+	font-size: 20;
+	background-color: lightblue;
+}
+
+button {
+	width: 25%
+}

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="homestyle.css">
+</head>
+
+<center>
+<body>
+	<div>
+		<table>
+			<tr>
+				<div class="banner">
+					<div class="navigation_links">
+						<a class="navireg" href="/">Home</a>
+						<a class="navireg" href="/register">Register</a>
+						<a class="navireg" href="/login">Login</a>
+					</div>
+				</div>
+			</tr>
+			<tr>
+				<div class="picture">
+				</div>
+				<div class="contentcontainer">
+				<div class="form-style" ng-app="" ng-controller="registerctrl">
+					<p class="login">Login to Connect!</p>
+					<form action="" method="post">
+
+					<label for="field1">
+					<b class="register">E-mail: </b>
+					<input class="regfirst" type="text" name="email" required="true" placeholder="E-mail" ng-model="email" required="true" />
+					</label>
+					<br>
+
+					<label for="field2">
+					<b class="register">Password: </b>
+					<input type="password" name="password" required="true" placeholder="Password" ng-model="password" required="true" />
+					</label>
+					<br>
+
+					<button type="submit">Submit</button>
+					</form>
+				</div>
+				</div>
+			</tr>
+		</table>
+	</div>
+
+
+</body>
+</center>
+
+
+</html>

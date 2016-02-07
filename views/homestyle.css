@@ -1,0 +1,166 @@
+body {
+	background-color: lightgrey;
+}
+
+div.banner {
+	width: 100%;
+	height: 70px;
+	padding-top: 0px;
+	background-image: url("navigation_bar.jpg");
+}
+
+div.navigation_links {
+	text-align: right;
+	padding-top: 20;
+}
+
+a.navireg {
+	font-size: 20;
+	font-family: algerian;
+	text-align: right;
+	margin-right: 25;
+}
+
+div.picture {
+	width: 100%;
+	height: 200px;
+	background-image: url("homepic.jpg");
+}
+
+div.welcome {
+	width: 100%;
+	height: 100;
+	background-color: lightgrey;
+}
+
+p {
+	font-family: verdana;
+	font-size: 20;
+	color: black;
+}
+
+div.buttons {
+	background-color: lightgrey;
+	width: 100%;
+	height: 400;
+	padding-top: 125;
+}
+
+a {
+	font-size: 40;
+	color: white;
+	font-family: algerian;
+	text-decoration: none;
+}
+
+button.loginbutton {
+	width: 30%;
+	height: 200px;
+	background-image: url("buttons.jpg");
+	display: inline-block;
+	text-align: center;
+	margin-right: 8%;
+	margin-left: 10%
+}
+
+button.loginbutton:hover {
+	width: 30%;
+	height: 200px;
+	background-color: blue;
+	display: inline-block;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+div.registerform {
+	width: 700;
+	height: 400;
+	background-image: url("buttons.jpg");
+}
+
+p.register {
+	color: white;
+	font-family: algerian;
+	font-style: italic;
+	font-size: 40;
+}
+
+p.login {
+	color: white;
+	font-family: algerian;
+	font-style: italic;
+	font-size: 40;
+}
+
+b.register {
+	color: white;
+	font-family: verdana;
+	font-size: 20;
+}
+
+.form-style{
+    width: 90%;
+    font-size: 20px;
+    background-image: url("regform.jpg");
+    padding: 20px 30px 15px 30px;
+}
+.form-style input[type=submit],
+.form-style input[type=button],
+.form-style input[type=text],
+.form-style input[type=email],
+.form-style input[type=password]
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+
+}
+.form-style label {
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+.form-style input[type=text],
+.form-style input[type=email],
+.form-style input[type=password]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+    text-align: center;
+}
+
+.form-style input[type=text]:focus,
+.form-style input[type=email]:focus,
+.form-style input[type=email] :focus.
+.form-style input[type=password]:focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style button[type=submit]{
+    background: #576E86;
+    border: none;
+    padding: 14px 16px 14px 16px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+
+.form-style button[type=submit]:hover{
+	background: #394D61;
+}
+
+div.contentcontainer {
+	width: 100%;
+	height: 500;
+	background-image: url("regform.jpg");
+}
