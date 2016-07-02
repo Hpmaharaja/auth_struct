@@ -1,5 +1,4 @@
 var bodyParser = require('body-parser');
-var bcrypt = require('bcryptjs');
 var express = require('express');
 var mongoose = require('mongoose');
 var sessions = require('client-sessions');
@@ -10,8 +9,6 @@ var ObjectId = Schema.ObjectId;
 
 var User = mongoose.model('User', new Schema({
 	id: ObjectId,
-	firstName: String,
-	lastName: String,
 	email: {type: String, unique: true},
 	password: String
 	})); 
@@ -70,13 +67,10 @@ app.get('/register',function(req,res) {
 });
 
 app.post('/register', function(req,res) {
-	var hash = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10));
 
 	var user = new User({
-		firstName: req.body.firstName,
-		lastName: req.body.lastName,
 		email: req.body.email,
-		password: hash
+		password: req.body.password
 	});
 	user.save(function(err) {
 		if(err) {
@@ -100,7 +94,7 @@ app.post('/login', function(req,res) {
 		if (!user) {
 			res.render('login.html', { error: 'Invalid email or password.'});	
 		} else {
-			if (bcrypt.compareSync(req.body.password, user.password)) {
+			if (req.body.password == user.password) {
 				req.session.user = user; //set-cookie: session={email: '....', password: '...'}
 				res.redirect('/dashboard');
 			} else {
@@ -111,7 +105,7 @@ app.post('/login', function(req,res) {
 });
 
 app.get('/dashboard', requireLogin, function(req,res) {
-	res.render('dashboard.jade');
+	res.render('dashboard.html');
 });
 
 app.get('/logout', function(req,res) {
